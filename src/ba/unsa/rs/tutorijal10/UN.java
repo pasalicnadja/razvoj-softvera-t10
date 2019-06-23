@@ -5,9 +5,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class UN implements Serializable {
-    public UN(ArrayList<Drzava> drzava) {
-        this.drzava = drzava;
+    public UN() {
     }
+
+
 
     public ArrayList<Drzava> getDrzava() {
         return drzava;

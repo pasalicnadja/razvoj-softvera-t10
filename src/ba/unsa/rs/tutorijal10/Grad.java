@@ -37,12 +37,4 @@ public class Grad implements Serializable {
     }
 
 
-    @Override
-    public String toString() {
-        return "Grad{" +
-                "naziv='" + naziv + '\'' +
-                ", brojStanovnika=" + brojStanovnika +
-                ", temperatura=" + Arrays.toString(temperatura) +
-                '}';
-    }
 }

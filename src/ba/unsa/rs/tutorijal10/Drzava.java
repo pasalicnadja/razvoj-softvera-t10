@@ -12,6 +12,13 @@ public class Drzava implements Serializable {
     public Drzava() {
     }
 
+    public Drzava(String naziv, int brojStanovnika, double povrsina, Grad glavniGrad) {
+        this.naziv = naziv;
+        this.brojStanovnika = brojStanovnika;
+        this.povrsina = povrsina;
+        this.glavniGrad = glavniGrad;
+    }
+
     public String getNaziv() {
         return naziv;
     }
@@ -44,13 +51,13 @@ public class Drzava implements Serializable {
         this.glavniGrad = glavniGrad;
     }
 
-    @Override
-    public String toString() {
-        return "Drzava{" +
-                "naziv='" + naziv + '\'' +
-                ", brojStanovnika=" + brojStanovnika +
-                ", povrsina=" + povrsina +
-                ", glavniGrad=" + glavniGrad +
-                '}';
+    String jedinicaZaPovrsinu;
+
+    public String getJedinicaZaPovrsinu() {
+        return jedinicaZaPovrsinu;
+    }
+
+    public void setJedinicaZaPovrsinu(String jedinicaZaPovrsinu) {
+        this.jedinicaZaPovrsinu = jedinicaZaPovrsinu;
     }
 }
